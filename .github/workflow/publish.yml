@@ -1,0 +1,19 @@
+# name: Deploy test-deploy
+# on: [push]
+# jobs:
+#   Test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       uses: appleboy/ssh-action@v0.1.8 //https://github.com/marketplace/actions/ssh-remote-commands github市场的action
+#       with:
+#         host: ${{ secrets.HOST }}         //仓库setting下设置的Actions secrets
+#         username: ${{ secrets.USERNAME }}
+#         password: ${{ secrets.PASSWORD }}
+#         port: ${{ secrets.PORT }}
+#         script: |
+#           cd /root/resource/nginx/
+#           ls -al
+#           rm -rf test-deploy
+#           git clone git@github.com:dingpc19/work-flow-test.git -b ${{github.ref_name}}
+#           cd test-deploy
+#           npm run build
