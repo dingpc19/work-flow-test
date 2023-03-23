@@ -4,6 +4,7 @@
   <div>test12323</div>
   <div>test2</div>
   <div>test3</div>
+  <div>test4</div>
 </template>
 
 <script lang="ts">
