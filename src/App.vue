@@ -8,6 +8,7 @@
   <div>test5</div>
   <div>test6</div>
   <div>test7</div>
+  <div>test8</div>
 </template>
 
 <script lang="ts">
